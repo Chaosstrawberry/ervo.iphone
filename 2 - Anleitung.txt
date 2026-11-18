@@ -1,0 +1,24 @@
+Ervo-Browser aufs iPhone bringen
+==============================
+
+Wichtig: Apple erlaubt keine Installationsdatei, die man einfach aufs iPhone kopiert.
+Jede App muss mit deiner Apple-ID für dein iPhone signiert werden. Das macht Xcode für dich
+(kostenlos, einmalig ca. 15 Minuten).
+
+1. Xcode aus dem Mac App Store installieren (falls noch nicht vorhanden) und einmal öffnen.
+2. In diesem Fenster "1 - In Xcode öffnen" doppelklicken.
+   (Falls macOS fragt: Rechtsklick -> "Öffnen" -> "Öffnen".)
+   Das Projekt wird nach Dokumente/Ervo-Browser iPhone-App kopiert und in Xcode geöffnet.
+3. In Xcode links oben auf das blaue "ErvoBrowser"-Symbol klicken -> Reiter "Signing & Capabilities"
+   -> bei "Team" mit deiner Apple-ID anmelden ("Add an Account…").
+   Meldet Xcode, dass die Bundle-ID vergeben ist: bei "Bundle Identifier" z. B.
+   at.florian.ervobrowser eintragen.
+4. iPhone per Kabel anschließen, entsperren, "Diesem Computer vertrauen" bestätigen.
+5. Oben in Xcode dein iPhone als Ziel auswählen und auf ▶ klicken.
+6. Am iPhone einmalig:
+   - Einstellungen -> Datenschutz & Sicherheit -> Entwicklermodus einschalten (iPhone startet neu)
+   - Einstellungen -> Allgemein -> VPN & Geräteverwaltung -> deine Apple-ID -> "Vertrauen"
+7. Ervo-Browser auf dem Home-Bildschirm antippen. Fertig!
+
+Mit kostenloser Apple-ID läuft die App 7 Tage – danach in Xcode einfach wieder ▶ drücken.
+Mit dem Apple Developer Program (99 USD/Jahr) geht es dauerhaft und über TestFlight auch für andere.
